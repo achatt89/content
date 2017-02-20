@@ -38,6 +38,8 @@ During creation you can also set a description for the symbol which is useful ma
 var sym = Symbol("Enki");
 ```
 
+Note that supplying a description when creating a symbol does not add the symbol to the symbol registry which we will discuss shortly.
+
 The typeof method of course returns symbol:
 
 ```
@@ -52,6 +54,6 @@ var sym2 = Symbol("Enki");
 sym1 === sym2; //false
 ```
 
-This probably is not what you would expect but remember Symbol are always unique.
+This probably is not what you would expect but remember Symbols are always unique.
  
 If you want to be able to access the same symbol using a key, we can use the Symbol registry which we will discuss next.
